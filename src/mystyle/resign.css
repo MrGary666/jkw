@@ -1,0 +1,134 @@
+
+@import url('step.css');
+
+body{
+	padding-top: 3.75em;
+}
+label{
+	text-align: left;
+	width: 100%;
+}
+.row{
+	margin: 0;
+}
+a:hover{
+	text-decoration: none;
+}
+.nopadding {
+	padding: 0;
+}
+.noborder{
+	border: none !important;
+}
+
+/*注册框部分*/
+/*登录框部分 resign_box*/
+.resign_box{
+	padding: 0em 0.9375em 5em 0.9375em;
+}
+.red_star{
+	color: #ff1010;
+	margin: 0 0.25em;
+}
+.tip_text{
+	color: #9d9c9c;
+	font-weight: 500;
+}
+/*.resign_form>.form-group label{
+	margin-bottom: 0.375em;
+}*/
+.resign_form>.form-group .form-control{
+	margin-top: 0.375em;
+	height: 2.625em;
+	box-sizing: border-box;
+}
+.form-group{
+	position: relative;
+}
+.form-group .account_icon{
+	width: 1.375em;
+	position: absolute;
+	right: 0.5em;
+	top: 2.25em;
+}
+.form-group .mima_icon{
+	width: 1.5em;
+	position: absolute;
+	right: 0.5em;
+	top: 2.25em;
+}
+.resign_form .checkbox_resign label{
+	margin: 1em auto;
+	font-size: 0.875em;
+/* 	line-height: 0.875em; */
+}
+.resign_form .checkbox_resign label a{
+	color: #0090D1;
+}
+.yzm_group {
+	overflow: hidden;
+}
+.yzm_group .yz_img_box{
+	cursor: pointer;
+	min-width: 9em;
+	box-sizing: border-box;
+	margin-top:0.2em;
+	padding-left: 0.625em;
+	height: auto;
+	float: right;
+}
+.yzm_group .form-control{
+	width: 54%;
+	float: left;
+}
+.yzm_group .yz_img_box img{
+	display: inline-block;
+	vertical-align: middle;
+	height: 2.4em;
+}
+.yzm_group .yz_img_box .next_yzm{
+	line-height: 2.875em;
+	font-size: 0.875em;
+	margin-left:0.5em;
+	color: #00A1E9;
+	text-align:left;
+}
+.resign_box .xy_p{
+	font-size: 0.75em;
+	color: #c2c2c2;
+	margin-top: -0.3125em;
+}
+.resign_box .xy_p>a{
+	line-height: 1.5;
+	color: #0090D1;
+}
+.btn_grounp{
+	margin-bottom: 2em;
+}
+.my_default_btn{
+	width: 100%;
+	background: #00A1E9;
+	color: #FFFFFF;
+	border: none;
+	outline: none;
+	margin-top: 0.625em;
+	padding-top: 0.75em;
+	padding-bottom: 0.75em;
+}
+.my_gray_btn{
+	width: 100%;
+	background: #c2c2c0;
+	color: #7d7d7d;
+	border: none;
+	outline: none;
+	margin-top: 0.625em;
+	padding-top: 0.75em;
+	padding-bottom: 0.75em;
+}
+.my_default_btn:hover,
+.my_default_btn:focus,
+.my_default_btn:active{
+	background: #0090d1;
+	color: #FFFFFF;
+}
+

@@ -1,0 +1,178 @@
+body{
+	padding-top: 3.75em;
+}
+label{
+	text-align: left;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.row{
+	margin: 0;
+}
+a:hover{
+	text-decoration: none;
+}
+.nopadding {
+	padding: 0;
+}
+.noborder{
+	border: none !important;
+}
+.line{
+	width: 100%;
+	height: 1px;
+	background: #c7c4c4;
+}
+
+
+/*需求列表*/
+.need_num{
+	color: #ff0107 !important;
+	text-align: center;
+	font-size: 1em;
+	margin-bottom: 0.25em;
+}
+.Llist .list-group{
+	background: #00a1e9;
+	padding-bottom: 7em;
+}
+.Llist .list-group .list-group-item.bg{
+	color: #00a1e9;
+	background: #efeded;
+}
+.Llist .list-group a:last-child{
+	border-radius: 0;
+}
+.list-group-item{
+	border-left: none;
+	border-right: none;
+	background: #00a1e9;
+}
+a.list-group-item, button.list-group-item{
+	color: #FFFFFF;
+	font-size: 0.875em;
+}
+/*a:link, a:visited, a:hover, a:focus, a:active*/
+a.list-group-item:hover,
+a.list-group-item:focus,
+a.list-group-item:active{
+	background: #f5f2f2;
+	color: #00a1e9;
+}
+.list-group-item.active, 
+.list-group-item.active:focus, 
+.list-group-item.active:hover{
+	background: #058ecc;
+	border: none;
+}
+
+.list_box .icon_box{
+	overflow: hidden;
+	padding-bottom: 2em;
+}
+.list_box .list_content{
+	display: none;
+	overflow: hidden;
+}
+/*.list_box .list_content li:nth-child(7){
+	clear: left;
+}*/
+.list_box .list_content.show{
+	display: block;
+}
+.list_box .list_content .icon_grounp{
+	float: left;
+	width: 8.25em;
+	height: 11.75em;
+	overflow: hidden;
+	/*width: 12.5%;*/
+	box-sizing: border-box;
+	padding: 1.5em 1.1875em 0.5em 1.1875em ;
+}
+.list_box .list_content .icon_grounp .need_p{
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #555558;
+	font-size: 0.875em;
+	margin-top: 0.5em;
+}
+.list_box .list_content .icon_grounp .need_p>span{
+	color: #9e9ea0;
+	font-size: 1em;
+}
+
+
+/*服务和专家*/
+.ser_zj_bg{
+	background: #f2f2f5;
+	padding: 2em 0.9375em;
+}
+.ser_col{
+	padding: 0 0.46875em;
+	margin-top:1.5em ;
+}
+.service_title{
+	font-weight: bold;
+	color: #1e1c1c;
+	font-size: 1.125em;
+	padding: 0 1em 0em 1em;
+}
+.ser_content{
+	background: #FFFFFF;
+	padding: 0.5em;
+}
+.ser_content .company_name{
+	text-align: left;
+	color: #1d1c1c;
+	font-size: 0.625em;
+	font-weight: 700;
+	margin: 0.625em auto;
+}
+.ser_content .company_tip{
+	text-align: left;
+	font-size: 0.5em;
+	color: #9f9f9f;
+}
+.ser_content .value_and_address{
+	overflow: hidden;
+	margin: 1em auto;
+}
+.ser_content .value_and_address .value{
+	color:#fcb103;
+	text-align: left;
+	font-size: 0.875em;
+	float: left;
+}
+.ser_content .value_and_address .value>span{
+	color: #9f9f9f;
+	font-size: 0.625em;
+}
+.ser_content .value_and_address .address{
+	float: right;
+	color: #1d1c1c;
+	font-size: 0.875em;
+}
+.ser_content .star_and_answer{
+	overflow: hidden;
+	padding: 1em 0 0.375em 0;
+	border-top: 1px dashed #e5e5e5;
+	
+}
+.ser_content .star_and_answer .starbox{
+	float: left;
+	width: 4.4375em;
+	overflow: hidden;
+}
+.ser_content .star_and_answer .starbox>img{
+	float: left;
+	width: 0.875em;
+}
+.ser_content .star_and_answer .answer_peo{
+	float: right;
+	font-size: 0.625em;
+	color: #9a9a9a;
+}

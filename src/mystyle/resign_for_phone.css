@@ -1,0 +1,97 @@
+body{
+	padding-top: 3.75em;
+}
+label{
+	text-align: left;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.row{
+	margin: 0;
+}
+a:hover{
+	text-decoration: none;
+}
+.nopadding {
+	padding: 0;
+}
+.noborder{
+	border: none !important;
+}
+
+/*邮箱激活部分*/
+.mail_box{
+	margin: 8em auto;
+}
+.buff_text{
+	color: #f97912;
+	font-size:1.875em ;
+	text-align: center;
+	margin: 1rem auto;
+}
+.bz_p{
+	font-weight: 700;
+	color: #202521;
+	margin-bottom: 3em;
+}
+.mail_btn_grounp{
+	margin: 4em auto 2em auto;
+}
+.mail_btn_grounp>div a{
+	margin-bottom: 1em;
+}
+.my_default_btn{
+	display: block;
+	width: 100%;
+	background: #00A1E9;
+	color: #FFFFFF;
+	border: none;
+	outline: none;
+	margin-top: 0.625em;
+	padding-top: 0.75em;
+	padding-bottom: 0.75em;
+}
+.my_default_btn:hover,
+.my_default_btn:focus,
+.my_default_btn:active{
+	background: #0090d1;
+	color: #FFFFFF;
+}
+
+.my_warning_btn{
+	display: block;
+	width: 100%;
+	background: #f97912;
+	color: #FFFFFF;
+	border: none;
+	outline: none;
+	margin-top: 0.625em;
+	padding-top: 0.75em;
+	padding-bottom: 0.75em;
+}
+.my_warning_btn:hover,
+.my_warning_btn:focus,
+.my_warning_btn:active{
+	background: #aaa8a7;
+	color: #FFFFFF;
+}
+
+/*手机激活*/
+.phone_box .form-control{
+	margin-top: 0.375em;
+	height: 2.625em;
+	box-sizing: border-box;
+}
+.phone_box label{
+	font-size: 0.875em;
+	line-height: 1.875em;
+}
+.red_star{
+	color: #ff1010;
+	margin: 0 0.25em;
+}
+.phone_btn_grounp{
+	margin: 1em auto 4em auto;
+}

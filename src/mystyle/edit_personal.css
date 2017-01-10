@@ -1,0 +1,175 @@
+body{
+	padding-top: 3.75em;
+}
+label{
+	text-align: left;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio]{
+	position: absolute;
+	top: 0.325em;
+}
+.row{
+	margin: 0;
+}
+a:hover{
+	text-decoration: none;
+}
+.nopadding {
+	padding: 0;
+}
+.noborder{
+	border: none !important;
+}
+
+/*自定义类*/
+.num{
+	font-size: 2em;
+}
+/* .border_warning{
+	border: 2px #f97912 solid !important;
+}
+.border_green{
+	border: 2px #188e00 solid !important;
+}
+ */
+
+/*步骤部分*/
+.step_and_3{
+	margin:4em auto ;
+	overflow: hidden;
+}
+.step_and_3 .step_num{
+	float: left;
+	width: 3.375em;
+	height: 3.375em;
+	line-height: 3.125em;
+	margin-left: 0.25em;
+	/* border: 2px solid #9ea0a1; */
+	color: #9ea0a1;
+	/* -ms-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%; */
+}
+.step_p{
+	margin: 0.25em;
+	font-size: 1.5em;
+	font-weight:normal;
+}
+.gray{
+	color: #9ea0a1;
+}
+
+
+/*企业信息添加表单*/
+.tip_text{
+	color: #9d9c9c;
+	font-weight: 500;
+}
+.red_star{
+	color: #ff1010;
+	margin: 0 0.25em;
+}
+.people_edit_box{
+	margin-top:3em;
+	margin-bottom:3em;
+}
+.people_edit_box .qynum_box{
+	margin-bottom: 1em;
+}
+.people_edit_box .people_edit_form .radio_box>label{
+	width: 6.25em;
+	float: left;
+	margin: 0.25em auto 1em auto;
+	line-height: 1.2;
+}
+.people_edit_box .people_edit_form .sex_select{
+	font-size: 0.875em;
+	text-align: left;
+	line-height: 1.5;
+}
+.people_edit_box .people_edit_form .form-group .form-control{
+	margin-top: 0.375em;
+	height: 2.625em;
+	box-sizing: border-box;
+}
+.people_edit_box .people_edit_form .form-group label{
+	font-size: 0.875em;
+	line-height: 1.5;
+}
+.people_edit_box .people_edit_form .form-group textarea{
+	height: 8em !important;
+}
+.people_edit_box .people_edit_form .form-group .head_img_p{
+	margin-bottom:1em;
+}
+.people_edit_box .people_edit_form .form-group .headImg_box{
+	width: 5.625em;
+	height: 5.625em;
+	overflow: hidden;
+	float: left;
+}
+.people_edit_box .people_edit_form .form-group .headImg_box img{
+	width: 100%;
+	height: auto;
+}
+.people_edit_box .people_edit_form .form-group .file_btn_grounp{
+	position: relative;
+	height: 3em;
+	margin-top: 2.625em;
+	margin-left: 1em;
+}
+.people_edit_box .people_edit_form .form-group .file_btn{
+	width: 8em;
+	padding: 0;
+	position:absolute;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	z-index: 22;
+}
+.people_edit_box .people_edit_form .form-group .btn_small_blue{
+	width: 8em;
+	height: 2em;
+	color: #FFFFFF;
+	line-height: 1em;
+	background: #00A1E9;
+	position:absolute;
+	top: 0.5em;
+	left: 0;
+	z-index: 1;
+}
+
+.btn_grounp{
+	margin-bottom: 2em;
+}
+.my_default_btn{
+	width: 100%;
+	background: #00A1E9;
+	color: #FFFFFF;
+	border: none;
+	outline: none;
+	margin-top: 0.625em;
+	padding-top: 0.75em;
+	padding-bottom: 0.75em;
+}
+.my_gray_btn{
+	width: 100%;
+	background: #c2c2c0;
+	color: #7d7d7d;
+	border: none;
+	outline: none;
+	margin-top: 0.625em;
+	padding-top: 0.75em;
+	padding-bottom: 0.75em;
+}
+.my_default_btn:hover,
+.my_default_btn:focus,
+.my_default_btn:active{
+	background: #0090d1;
+	color: #FFFFFF;
+}

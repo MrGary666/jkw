@@ -1,0 +1,97 @@
+/*登录页面*/
+
+@media only screen and (min-width: 1141px) {
+    .yzm_group .form-control {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .yzm_group .form-control {
+        width: 42%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .yzm_group .form-control {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .yzm_group .form-control {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .yzm_group .form-control {
+        width: 37%;
+        float: left;
+    }
+}
+
+/*激活页面*/
+
+@media only screen and (max-width: 676px) {
+    .mail_box,
+    .phone_box {
+        margin: 2em auto;
+    }
+    .mail_box .buff_img {
+        width: 4em;
+    }
+    .phone_box .buff_img {
+        width: 3em;
+    }
+    .buff_text {
+        font-size: 1em
+    }
+    .bz_p {
+        font-size: 0.875em;
+        margin-bottom: 1em;
+    }
+    .phone_btn_grounp {
+        margin: 1em auto 2em auto;
+    }
+}
+
+
+/*全部需求页面*/
+
+@media only screen and (max-width: 676px) {
+    .list_box,
+    .Llist {
+        padding: 0;
+    }
+    .list_box .list_content .icon_grounp {
+        width: 5.25em;
+        height: 8.75em;
+        overflow: hidden;
+        /*width: 12.5%;*/
+        box-sizing: border-box;
+        padding: 1.5em 1.1875em 0.5em 1.1875em;
+    }
+    .list_box .list_content .icon_grounp .need_p {
+        font-size: 0.625em;
+        margin-top: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .ser_content .company_name {
+        font-size: 1em;
+        font-weight: 700;
+        margin: 1em auto 0.5em auto;
+    }
+    .ser_content .company_tip {
+        font-size: 0.875em;
+    }
+    .ser_content .value_and_address .value {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,629 @@
+@CHARSET "utf-8";
+/*
+全局重置样式reset.css
+*/
+@import url('reset.css');
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*宽度和高度自适应,最大设计分辨1080P=1920*1080*/
+html,body
+{
+	min-height: 100%;
+	height: 100%;
+	_height: 100%; /*IE6 hack*/
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	/*Disable iOS/WinMobile font size changes*/
+	font-size: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	/*text-rendering: optimizeLegibility;*/
+	/*disable select text*/
+	-webkit-touch-callout: none;
+	-webkit-user-select: none; /* Chrome all / Safari all */
+	-moz-user-select: none; /* Firefox all */
+	moz-user-select: -moz-none;
+	-ms-user-select: none; /* IE 10+ */
+	-o-user-select: none;
+	-khtml-user-select: none; /*早期浏览器*/
+	user-select: none;
+}
+
+/*
+默认字体
+pt和px的换算公式可以根据pt的定义得出:
+pt=1/72(英寸), px=1/dpi(英寸)
+因此 pt=px*dpi/72，即1英寸=72pt=dpi px
+以Windows下的96dpi来计算，pt=px*96/72=px*4/3
+例如：9pt = 9 * 4 / 3 = 12px
+11pt = 11 * 4 / 3 = 15px
+*/
+body {
+	text-align: center;
+	vertical-align: baseline;
+	max-width: 100%;
+	/* 将标准字体大小设置为浏览器默认值，行高为1.5倍，大多数浏览器默认字号为16像素，即1em=16像素。注意：英文字体声明要在中文字体的前面，MAC的要在windows的前面 */
+	font: normal 100%/1.5 "Helvetica Neue",Helvetica,"STHeitiSC-Light",Arial,Verdana,"Microsoft YaHei","SimSun",sans-serif;
+}
+
+a {
+	cursor: pointer;
+	color: black;
+	text-decoration: none;
+}
+/*如果href非空，内容为空，则赋值href*/
+a[href^="http"]:empty::before {
+	content: attr(href);
+}
+
+/*
+注意：为了避免a:hover和a:active样式冲突不起作用，a的应用样式必须按照：a:link,a:visited,a:hover,a:focus,a:active次序定义
+*/
+a:link, a:visited {
+	/*color: blue;*/
+}
+
+ a:hover, a:focus, a:active {
+	/*color: blue;*/
+	font-weight: bold;
+}
+
+/*默认字体大小：16px*/
+input[type="text"],input[type="password"],select {
+	font-size: 1.05em;
+    height: 1.8em;
+	margin: 0;
+    padding: 0 3px;
+	/* text-indent: 3px;*/
+	letter-spacing: 1px;
+	-moz-box-sizing : border-box;
+	-webkit-box-sizing : border-box;
+	box-sizing : border-box;
+	/*
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	*/
+}
+
+input[type="radio"],input[type="checkbox"] {
+	margin: 0;
+	/*padding: 0;*/
+}
+
+input[type="reset"],
+input[type="button"],
+input[type="submit"],
+input[type="file"],
+input[type="radio"],
+input[type="checkbox"] {
+	cursor: pointer;
+}
+
+.radio-label,.checkbox-label {
+	/*margin:20px 20px 0 0;*/
+	display:inline-block;
+}
+
+.radio,.checkbox {
+	display:none;
+}
+
+/*FF文字垂直居中*/
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+	border: none;
+	padding: 0;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active,input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:active {
+	font-weight: bold;
+}
+
+ol {
+	display: block;
+	list-style-type: decimal;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	/*-webkit-padding-start: 40px;*/
+}
+
+dl {
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+dt {
+	display: block;
+}
+
+dd {
+	display: block;
+	-webkit-margin-start: 0px;
+}
+
+h1 {
+	letter-spacing: 5px;
+}
+
+h2,h3 {
+	letter-spacing: 3px;
+}
+
+h4,h5,h6 {
+	letter-spacing: 1px;
+}
+
+p {
+	display: block;
+	letter-spacing: 2px;
+	/*line-height: 2em;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;*/
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	word-wrap: break-word;
+}
+
+fieldset
+{
+	display: block;
+	padding: 8px;
+	/*
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;*/
+	-webkit-margin-start: 2px;
+	-webkit-margin-end: 2px;
+	-webkit-padding-before: 0.35em;
+	-webkit-padding-start: 0.75em;
+	-webkit-padding-end: 0.75em;
+	-webkit-padding-after: 0.625em;
+	border: 2px groove threedface;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	min-width: -webkit-min-content;
+}
+
+legend {
+	display: block;
+	/*border-radius: 3px;*/
+	-webkit-padding-start: 2px;
+	-webkit-padding-end: 2px;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 0;
+	color: black;
+	border: none;
+	padding: 3px 6px;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+}
+
+select {
+	/*下拉内容居中*/
+	border: 1px solid #ccc;
+	/*background: none;*/
+	text-indent: 0;
+	padding: 0 0 0 3px;
+	outline: none;
+	color: #333;
+	/**behavior: url(select.htc);*/
+}
+
+select:focus {
+	border-color: #79c0f2;
+}
+
+span,label {
+	letter-spacing: 1px;
+}
+
+img,embed,object,video
+{
+	max-width: 100%;
+	width: 100%\9; /* IE6,7,8 */
+	height: auto;
+	-ms-interpolation-mode: bicubic;
+}
+
+textarea
+{
+	/* 将标准字体大小设置为浏览器默认值，行高为1.5倍，大多数浏览器默认字号为16像素，即1em=16像素。注意：英文字体声明要在中文字体的前面，MAC的要在windows的前面 */
+	font: normal 100%/1.5 "Helvetica Neue",Helvetica,"STHeitiSC-Light",Arial,Verdana,"Microsoft YaHei","SimSun",sans-serif;
+	outline: 0 none;
+	/*
+	border-color: rgba(82, 168, 236, 0.8);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+	*/
+	font-size: 1.0em;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	padding: 3px;
+	line-height: 1.4em;
+	/*border-radius: 3px;*/
+	/*去掉右下角的小三角*/
+	resize: none;
+	/*
+	去掉默认边距:左右占2px。
+	*/
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	/*防IE自动更改断行*/
+	overflow: auto;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.textarea-readonly {
+	border: 0px solid;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+/*对input添加清除小叉<input class="input-clear" required><a href="javascript:void(0)" class="clear"></a>*/
+.clear {
+    display: none;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin: 6px 0 0 -20px;
+    background: url(clear.png) no-repeat;
+    outline: none;
+}
+
+.clear-input:valid + .clear {
+    display: inline;
+}
+.clear-input::-ms-clear {
+	display: none;
+}
+
+.clear-input:valid + .clear {
+	display: inline;
+}
+
+.input-readonly {
+	outline: none;
+	border: 0;
+}
+
+.huge {
+	font-size: 2.0em;
+}
+
+.huge-px {
+	font-size: 24px;
+}
+
+.large {
+	font-size: 1.5em;
+}
+
+.large-px {
+	font-size: 20px;
+}
+
+.normal {
+	font-size: 1.0em;
+}
+
+.normal-px {
+	font-size: 16px;
+}
+
+/*11pt-15px*/
+.medium {
+	font-size: 0.9375em;
+}
+
+.medium-px {
+	font-size: 14px;
+}
+
+/*9pt-12px*/
+.small
+{
+	font-size: 0.75em;
+}
+
+.small-px {
+	font-size: 12px;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.truncate {
+    overflow: hidden;
+}
+
+.tal {
+	text-align: left;
+}
+
+.tar {
+	text-align: right;
+}
+
+.tac {
+	text-align: center;
+}
+
+.ti {
+	text-indent: 0;
+}
+
+/*鼠标经过*/
+.over
+{
+	background-color: #FF0000;
+}
+
+/*水平居中*/
+.h-center {
+	margin:0 auto;
+}
+
+/*垂直居中*/
+.v-center {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	/*-webkit-align-items: center;
+	-ms-flex-align: center;
+	display: -webkit-flex;
+	display: flex;*/
+}
+
+/*须声明元素高度的居中，推荐设置overflow:auto;*/
+.center {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: auto;
+}
+
+/**
+ * 输入内容样式
+ */
+.input-group {
+	text-align: left;
+	text-indent: 0;
+	padding: 3px 0;
+	color: black;
+}
+
+.input-group label {
+	padding: 3px 0;
+}
+
+.h-layout {
+	float: left;
+	padding-right: 14px;
+	vertical-align: middle;
+}
+
+.v-layout {
+	clear: left;
+}
+/*换行*/
+.nl {
+	text-indent: 2em;
+	font-size: 1em;
+}
+
+.tips-group {
+	display: block;
+	font-size: 1.0em;
+	padding-bottom: 5px;
+	vertical-align: middle;
+}
+
+.submit {
+	padding: 5px;
+}
+
+.submit-btn {
+	padding: 3px 20px;
+}
+
+.btn-normal {
+    margin: 0px 10px;
+    overflow: hidden;
+    width: 100px;
+    height: 32px;
+    /* line-height: 35px; */
+    vertical-align: middle;
+    border: 0 solid;
+    /* text-align: center; */
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.btn-blue {
+    /* padding: 3px 20px; */
+    margin: 0px 10px;
+    overflow: hidden;
+    width: 100px;
+    height: 32px;
+    /* line-height: 35px; */
+    vertical-align: middle;
+    border: 0 solid;
+    background: #328cd7;
+    color: #fff;
+    /* text-align: center; */
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+/*常用设置*/
+.item_required
+{
+	color: red;
+	/*color: #D9182D;*/
+	height: 1em;
+	line-height: 1em;
+	font-size: 1.5em;
+	vertical-align: middle;
+}
+
+.item_note
+{
+	font-size: 1.0em;
+	color:#666666;
+}
+
+/*价格*/
+.money
+{
+	text-align: right;
+}
+.price {
+	/*font-weight: 700!important;*/
+	font-family: "Helvetica Neue",Helvetica,"STHeitiSC-Light","Microsoft Yahei",STXihei,Arial,sans-serif;
+}
+.color-price {
+	color: #B12704 !important;
+	font-weight: 700!important;
+	font-family: "Helvetica Neue",Helvetica,"STHeitiSC-Light","Microsoft Yahei",STXihei,Arial,sans-serif;
+}
+/*提示级别*/
+.error {
+	color: red;
+	font-size: 1.0em;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.warning {
+	color: #f97912;
+	font-size: 1.0em;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.success {
+	color: green;
+	font-size: 1.0em;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.cl {
+	clear: left;
+}
+
+.cr {
+	clear: right;
+}
+
+.cb {
+	clear: both;
+}
+
+/*超长省略*/
+.ellipsis {
+	/*display: -webkit-box;*/
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3; /*显示3行之后省略*/
+	white-space: nowrap;
+	text-overflow: ellipsis; /* for IE */
+	-o-text-overflow: ellipsis;  /* for Opera */
+	-icab-text-overflow: ellipsis;
+	-khtml-text-overflow: ellipsis;
+	-moz-text-overflow: ellipsis;
+	width: 100%;
+	overflow: hidden;
+}
+
+.ellipsis:after {
+    content: "..."; /* for Firefox */
+}
+
+@media all and (min-width: 0px) {
+	.ellipsis:after{
+		content: ""; /* for Opera */
+	}
+}
+
+/*背景透明*/
+.transparent {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)"; /*IE8*/
+	-moz-opacity: 0.5; /*firefox*/
+	filter: alpha(opacity=50);  /* IE6，IE7*/
+	opacity: 0.5;  /*Opera9.0+，Firefox1.5+，Chrome*/
+	/*background: #fff;*/ /*支持图片 url(http://www.google.cn/logos/vivaldi10-hp.gif);*/
+}
+
+/*面包屑导航*/
+.bread-nav {
+	width: 100%;
+}
+.bread-crumb {
+	display: inline-block;
+	color: #333;
+	/*background: #F3F3F3;*/
+	/*height: 1.5em;*/
+	line-height: 1.5em;
+	padding: 5px 0;
+	margin: 5px 0;
+	text-align: left;
+	float: left;
+	width: 100%;
+}
+
+.bread-crumb a {
+	color: black;
+	display: block;
+	float: left;
+	padding-left: 5px;
+	text-decoration: none;
+}
+.bread-crumb {
+	text-decoration: none;
+}
+
+.bread-crumb span {
+	color: black;
+	float: left;
+	padding-left: 5px;
+}
+
+.bread-crumb a.active {
+	color: blue;
+	text-decoration: none;
+}

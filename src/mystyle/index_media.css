@@ -1,0 +1,420 @@
+/* 首页小屏 */
+
+@media only screen and (max-width:750px) {
+    .img-tosmall {
+        width: 25%;
+        max-width: 30%;
+    }
+    h2.section_title {
+        font-size: 1.2em;
+    }
+    .need_box,
+    .soft_box,
+    .service_box {
+        padding: 4em 0 4em 0;
+    }
+    .tip_num {
+        font-size: 1.1em;
+        margin: 0.1em 0 0.1em 0;
+    }
+    .text_xs_center {
+        text-align: center;
+        margin: 0.875em 0;
+    }
+    .need_box .text_col p,
+    .soft_box .text_col p,
+    .service_box .text_col p {
+        margin-top: 1.2em;
+        margin-bottom: 1.2em;
+        font-size: 1.125em;
+        color: #3f4142;
+        line-height: 1.7;
+    }
+    .text_xs_center {
+        text-align: center;
+        margin: 1.875em 0;
+    }
+    .my_blue_btn {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    .soft_box .my_blue_btn {
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+
+/*小于540px媒体查询*/
+
+@media only screen and (max-width: 540px) {
+    .need_box .text_col p {
+        font-size: 1em;
+        margin-top: 1.375em;
+    }
+    .soft_box .text_col p {
+        margin-top: 2.375em;
+        font-size: 1em;
+    }
+    .service_box .text_col p {
+        margin-top: 2.375em;
+        font-size: 1em;
+    }
+    .need_box,
+    .soft_box,
+    .service_box {
+        padding: 0.5em 0 0.5em 0;
+    }
+}
+
+
+/*banner部分特殊媒体查询*/
+
+@media only screen and (max-width: 1230px) {
+    .my_carousel_cap {
+        height: 90%;
+    }
+    .my_carousel_cap .jk_title {
+        font-size: 1.8em;
+        letter-spacing: 0.875em;
+        line-height: 1.6;
+        margin-bottom: 1.125em;
+    }
+    .my_carousel_cap .xq_six {
+        width: 5em;
+        height: 5em;
+        margin: 0 auto;
+        font-size: 2em;
+        color: #FFFFFF;
+        line-height: 5em;
+        font-weight: bold;
+    }
+    .my_carousel_cap .doubble_six {
+        width: 22.5em;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .my_carousel_cap .doubble_six .rj_six {
+        width: 5em;
+        height: 5em;
+        font-size: 2em;
+        text-align: center;
+        line-height: 5em;
+        font-weight: bold;
+    }
+    .my_carousel_cap .doubble_six .fw_six {
+        width: 5em;
+        height: 5em;
+        float: left;
+        margin-left: 1.25em;
+        font-size: 2em;
+        line-height: 5em;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .my_carousel_cap {
+        height: 90%;
+    }
+    .my_carousel_cap .jk_title {
+        font-size: 1.625em;
+        letter-spacing: 0.875em;
+        line-height: 1.6;
+        margin-bottom: 1.125em;
+    }
+    .my_carousel_cap .xq_six {
+        width: 4.375em;
+        height: 4.375em;
+        margin: 0 auto;
+        font-size: 1.75em;
+        color: #FFFFFF;
+        line-height: 4.375em;
+        font-weight: bold;
+    }
+    .my_carousel_cap .doubble_six {
+        width: 18em;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .my_carousel_cap .doubble_six .rj_six {
+        width: 4.375em;
+        height: 4.375em;
+        font-size: 1.75em;
+        text-align: center;
+        line-height: 4.375em;
+        font-weight: bold;
+    }
+    .my_carousel_cap .doubble_six .fw_six {
+        width: 4.375em;
+        height: 4.375em;
+        float: left;
+        margin-left: 1.25em;
+        font-size: 1.75em;
+        line-height: 4.375em;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .my_carousel_cap {
+        height: 80%;
+    }
+    .my_carousel_cap .jk_title {
+        font-size: 1.25em;
+        letter-spacing: 0.875em;
+        line-height: 1.6;
+        margin-bottom: 2.125em;
+    }
+    .my_carousel_cap .xq_six {
+        width: 4.375em;
+        height: 4.375em;
+        margin: 0 auto;
+        font-size: 1.25em;
+        color: #FFFFFF;
+        line-height: 4.375em;
+        font-weight: bold;
+    }
+    .my_carousel_cap .doubble_six {
+        width: 13em;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .my_carousel_cap .doubble_six .rj_six {
+        width: 4.375em;
+        height: 4.375em;
+        font-size: 1.25em;
+        text-align: center;
+        line-height: 4.375em;
+        font-weight: bold;
+    }
+    .my_carousel_cap .doubble_six .fw_six {
+        width: 4.375em;
+        height: 4.375em;
+        float: left;
+        margin-left: 1.25em;
+        font-size: 1.25em;
+        line-height: 4.375em;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .my_carousel_cap {
+        height: 50%;
+        top: 22%;
+    }
+    .my_carousel_cap .jk_title {
+        font-size: 1.2em;
+        letter-spacing: 0.875em;
+        line-height: 1.6;
+        margin-bottom: 1.125em;
+    }
+    .my_carousel_cap .xq_six {
+        width: 4.375em;
+        height: 4.375em;
+        margin: 0 auto;
+        font-size: 1em;
+        color: #FFFFFF;
+        line-height: 4.375em;
+        font-weight: bold;
+    }
+    .my_carousel_cap .doubble_six {
+        width: 10em;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .my_carousel_cap .doubble_six .rj_six {
+        width: 4.375em;
+        height: 4.375em;
+        font-size: 1em;
+        text-align: center;
+        line-height: 4.375em;
+        font-weight: bold;
+    }
+    .my_carousel_cap .doubble_six .fw_six {
+        width: 4.375em;
+        height: 4.375em;
+        float: left;
+        margin-left: 1.25em;
+        font-size: 1em;
+        line-height: 4.375em;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .my_carousel_cap {
+        height: 50%;
+    }
+    .carousel-inner {
+        margin-top: 3em;
+    }
+    a.my_blue_btn {
+        margin-top: 3.8em;
+    }
+    .need_box {
+        /* box-sizing: content-box; */
+        padding: 2em 0 2em 0;
+        margin-top: 0em;
+    }
+    .service_box {
+        padding-bottom: 2em;
+    }
+    .carousel-inner img {
+        margin-top: 2em;
+    }
+    .my_carousel_cap .jk_title {
+        font-size: 0.875em;
+        letter-spacing: 0.25em;
+        line-height: 1.5;
+        margin-bottom: 1.25em;
+    }
+    .my_carousel_cap .xq_six {
+        width: 3.75em;
+        height: 3.75em;
+        margin: 0 auto;
+        font-size: 0.625em;
+        color: #FFFFFF;
+        line-height: 3.75em;
+        font-weight: bold;
+    }
+    .my_carousel_cap .doubble_six {
+        width: 5.125em;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .my_carousel_cap .doubble_six .rj_six {
+        width: 3.75em;
+        height: 3.75em;
+        font-size: 0.625em;
+        text-align: center;
+        line-height: 3.75em;
+        font-weight: bold;
+    }
+    .my_carousel_cap .doubble_six .fw_six {
+        width: 3.75em;
+        height: 3.75em;
+        float: left;
+        margin-left: 0.625em;
+        text-align: center;
+        font-size: 0.625em;
+        line-height: 3.75em;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 384px) {
+    .carousel-inner {
+        margin-top: 3em;
+    }
+    a.my_blue_btn {
+        margin-top: 0.8em;
+    }
+    .need_box {
+        padding: 2em 0 2em 0;
+        margin-top: -2.9em;
+    }
+    .service_box {
+        padding-bottom: 2em;
+    }
+    .my_carousel_cap {
+        height: 60%;
+        top: 14%;
+    }
+    .my_carousel_cap .jk_title {
+        font-size: 1em;
+        letter-spacing: 0.25em;
+        line-height: 1.5;
+        margin-bottom: 0.375em;
+    }
+    .carousel-inner img {
+        height: 180px;
+    }
+    .my_carousel_cap .doubble_six {
+        width: 5.375em;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .my_carousel_cap .doubble_six .rj_six {
+        /* width: 3.75em;
+       height: 3.75em;*/
+        font-size: 0.625em;
+        text-align: center;
+        line-height: 3.75em;
+        font-weight: bold;
+    }
+    .my_carousel_cap .doubble_six .fw_six {
+        width: 3.75em;
+        height: 3.75em;
+        float: left;
+        margin-left: 0.625em;
+        text-align: center;
+        font-size: 0.625em;
+        line-height: 3.75em;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .carousel-inner {
+        margin-top: 2em;
+    }
+    .carousel-inner img {
+        height: 150px;
+    }
+    .soft_box a.my_blue_btn,
+    a.my_blue_btn {
+        margin-top: 0.2em;
+        padding: 5px 20px;
+    }
+    .need_box {
+        padding: 1.1em 0 1.1em 0;
+        margin-top: -9em;
+    }
+    .service_box {
+        margin-bottom: 3em;
+    }
+    .my_carousel_cap {
+        height: 90%;
+        top: 12%;
+    }
+    .my_carousel_cap .jk_title {
+        font-size: 1em;
+        letter-spacing: 0.25em;
+        line-height: 1.5;
+        margin-bottom: 0.375em;
+    }
+    .my_carousel_cap .doubble_six {
+        width: 5.125em;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .my_carousel_cap .doubble_six .rj_six {
+        width: 3.75em;
+        height: 3.75em;
+        font-size: 0.625em;
+        text-align: center;
+        line-height: 3.75em;
+        font-weight: bold;
+    }
+    .my_carousel_cap .doubble_six .fw_six {
+        width: 3.75em;
+        height: 3.75em;
+        float: left;
+        margin-left: 0.625em;
+        text-align: center;
+        font-size: 0.625em;
+        line-height: 3.75em;
+        font-weight: bold;
+    }
+}
+
